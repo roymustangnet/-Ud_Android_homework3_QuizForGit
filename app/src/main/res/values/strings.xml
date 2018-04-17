@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Quiz for Git</string>
+    <string name="name">Name</string>
+    <string name="question1">1.How many fields are there in Git?</string>
+    <string name="rg_ans1">Only One</string>
+    <string name="rg_ans2">Two</string>
+    <string name="rg_ans3">Three</string>
+
 </resources>
