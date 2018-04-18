@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">Quiz for Git</string>
     <string name="name">Name</string>
-    <string name="question1">1. How many fields are there in Git?</string>
+    <string name="question1">1. How many fields are there in Git?（10）</string>
     <string name="rg_ans1">Only One</string>
     <string name="rg_ans2">Two</string>
     <string name="rg_ans3">Three</string>
-    <string name="question2">2. What \'git add\' can do?</string>
+    <string name="question2">2. What \'git add\' can do?（10）</string>
     <string name="cb1_ans1">Track files</string>
     <string name="cb1_ans2">Move files from Workspace to Stage</string>
     <string name='cb1_ans3'>Remove some files</string>
+    <string name="question3">3. If you want to lookup the log on one line, what command you should use?</string>
+    <string name="question4">4. What\'s the mascot for GitHub?</string>
     <string name="submit">submit</string>
 </resources>
