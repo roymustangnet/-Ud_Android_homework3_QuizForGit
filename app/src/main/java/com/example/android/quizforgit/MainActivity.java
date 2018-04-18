@@ -9,26 +9,44 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    EditText usernameEditText = null;
+
+    RadioGroup q1RadioGroup = null;
+    CheckBox cb1 = null;
+    CheckBox cb2 = null;
+    CheckBox cb3 = null;
+    EditText q3EditText = null;
+    RadioGroup q4RadioGroup = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        usernameEditText = (EditText)findViewById(R.id.user_name);
+        q1RadioGroup = (RadioGroup) findViewById(R.id.question1_radiogroup);
+        cb1 = (CheckBox) findViewById(R.id.q2_checkbox1);
+        cb2 = (CheckBox) findViewById(R.id.q2_checkbox2);
+        cb3 = (CheckBox) findViewById(R.id.q2_checkbox3);
+        q3EditText =(EditText)findViewById(R.id.q3_edittext);
+        q4RadioGroup = (RadioGroup) findViewById(R.id.question4_radiogroup);
     }
 
     public void submit(View view) {
-        EditText usernameEditText =(EditText)findViewById(R.id.user_name);
+
         String username = usernameEditText.getText().toString();
-        int q1Selected  = getAnsForRadioGroup(R.id.question1_radiogroup);
-        CheckBox cb1 = (CheckBox) findViewById(R.id.q2_checkbox1);
-        CheckBox cb2 = (CheckBox) findViewById(R.id.q2_checkbox2);
-        CheckBox cb3 = (CheckBox) findViewById(R.id.q2_checkbox3);
+
+        int q1Selected  = getAnsForRadioGroup(q1RadioGroup);
+
         boolean ans2 = false;
+
         if (cb1.isChecked() && cb2.isChecked() && (!cb3.isChecked()))
             ans2 = true;
-        EditText q3EditText =(EditText)findViewById(R.id.q3_edittext);
+
         String ans3 = q3EditText.getText().toString();
-        int q4Selected  = getAnsForRadioGroup(R.id.question4_radiogroup);
+
+        int q4Selected  = getAnsForRadioGroup(q4RadioGroup);
+
         displayMessage(getDisplayMessage(username,
                 q1Selected,
                 ans2,
@@ -36,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 q4Selected));
     }
 
-    private int getAnsForRadioGroup(int id){
-        RadioGroup radioGroup = (RadioGroup) findViewById(id);
+    private int getAnsForRadioGroup(RadioGroup radioGroup){
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
         View radioButton = radioGroup.findViewById(radioButtonID);
         int idx = radioGroup.indexOfChild(radioButton);
