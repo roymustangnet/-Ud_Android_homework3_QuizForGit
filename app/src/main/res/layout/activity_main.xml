@@ -21,6 +21,9 @@
 
         <TextView
             style="@style/QuestionText"
+            android:layout_marginTop="@dimen/TextViewMarginTop"
+            android:layout_marginBottom="@dimen/TextViewMarginBottom"
+            android:textSize="@dimen/TextViewTextSize"
             android:text="@string/question1" />
 
         <RadioGroup
@@ -51,6 +54,9 @@
 
         <TextView
             style="@style/QuestionText"
+            android:layout_marginTop="@dimen/TextViewMarginTop"
+            android:layout_marginBottom="@dimen/TextViewMarginBottom"
+            android:textSize="@dimen/TextViewTextSize"
             android:text="@string/question2" />
 
         <CheckBox
@@ -76,6 +82,9 @@
 
         <TextView
             style="@style/QuestionText"
+            android:layout_marginTop="@dimen/TextViewMarginTop"
+            android:layout_marginBottom="@dimen/TextViewMarginBottom"
+            android:textSize="@dimen/TextViewTextSize"
             android:text="@string/question3" />
 
         <EditText
@@ -85,6 +94,9 @@
 
         <TextView
             style="@style/QuestionText"
+            android:layout_marginTop="@dimen/TextViewMarginTop"
+            android:layout_marginBottom="@dimen/TextViewMarginBottom"
+            android:textSize="@dimen/TextViewTextSize"
             android:text="@string/question4" />
 
         <RadioGroup
@@ -114,6 +126,9 @@
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/TextViewMarginTop"
+            android:layout_marginBottom="@dimen/TextViewMarginBottom"
+            android:textSize="@dimen/TextViewTextSize"
             style="@style/QuestionText"/>
     </LinearLayout>
 

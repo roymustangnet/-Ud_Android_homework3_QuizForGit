@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextViewMarginTop">16dp</dimen>
+    <dimen name="TextViewMarginBottom">16dp</dimen>
+    <dimen name="TextViewTextSize">15sp</dimen>
+</resources>
